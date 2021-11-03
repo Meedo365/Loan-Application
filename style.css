@@ -3,26 +3,35 @@
     padding: 0;
     box-sizing: border-box;
     background: #dcd8d8;
-    /* background-color: #fff; */
 }
 header{
     width: 100%;
     padding: 10px 15px;
-    background: #fff;
+    background: black;
 }
 nav{
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    background: #fff;
+    background: black;
     justify-content: space-between;
+}
+nav h1{
+    color: white;
+    background: black;
+    cursor: pointer;
 }
 nav ul{
     display: flex;
+    color: white;
+    background: black;
 }
 nav ul li{
     list-style: none;
     margin-left: 25px;
+    color: white;
+    background: black;
+    cursor: pointer;
 }
 .loan-application{
     height: max-content;
