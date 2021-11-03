@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>LoanBank</h1>
+
+            <ul>
+                <li>Home</li>
+                <li>Loans</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="loan-application">
+        <div class="criteria">
+            <h1>Loan application form</h1><br>
+
+            <h3>Application criteria</h3><br>
+            <p>The following would be assessed before your loan can be approved</p>
+            <ul>
+                <li>Annual income</li>
+                <li>Account balance</li>
+                <li>What;s your credit history</li>
+                <li>When last you made a deposit</li>
+                <li>When you collected your last loan</li>
+                <li>When did you repay your last loan</li>
+                <li>What type of account you operate with our bank</li>
+            </ul>
+
+            <p>Kindly fill the form to apply for the loan. If you are eligible, a notification would be sent to you.
+                Thank you</p>
+        </div>
+        <div class="form">
+            <h1>*Please fill all fields honestly and accurately</h1>
+            <form action="">
+                <div class="input-field">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" id="first_name" />
+                    <p id="error1"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" id="last_name" >
+                    <p id="error2"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for="annual_income">Annual income</label>
+                    <input type="number" id="annual_income" >
+                    <p id="error3"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for="account_balance">What's your current account balance?</label>
+                    <input type="number" id="currentAmount" >
+                    <p id="error4"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for="desired_amount">How much do you want?</label>
+                    <input type="number" id="Desired_loan" placeholder="Desired Loan Amount">
+                    <p id="error5"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for="credit_history">Have you recieved loan in the past 6 months</label>
+                    <select name="Repay" id="Credit">
+                        <option value="...">...</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No </option>
+                    </select>
+                    <p id="error6"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for="Last Deposit">When was your last deposit to your account?</label>
+                    <input type="date" id="deposit" placeholder="Last Deposit Date">
+                    <p id="error7"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for="Last Collection">When was your last loan collection date?</label>
+                    <input type="date" id="loan" placeholder="Last Loan Collection Date">
+                    <p id="error8"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for="Last Collection">When did you finish paying your last loan?</label>
+                    <input type="date" id="Repayy" placeholder="Last Loan Repayment Date">
+                    <p id="error9"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for="account_type">Select your account Type</label>
+                    <select name="Account" id="Accounttype">
+                        <option value="...." disabled='disabled' selected='selected'>...</option>
+                        <option value="current">Current Account</option>
+                        <option value="savings">Savings Account</option>
+                    </select>
+                    <p id="error10"></p>
+                </div>
+
+                <div class="form-group-btn">
+                    <button type="button" id="submitBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="response">
+        <h3>Feedback</h3>
+        <p class="response-box" id="response"></p>
+    </div>
+</body>
+<script src="loan.js"></script>
+
+</html>
